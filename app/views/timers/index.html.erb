@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <%= javascript_pack_tag 'timer/application' %>
+  <meta charset="UTF-8">
+  <title>Timer</title>
+</head>
+<body>
+  <header>
+    <div class="progress-pie-chart">
+      <div class="ppc-progress">
+        <div class="ppc-progress-fill"></div>
+      </div>
+      <div class="ppc-percents">
+        <div class="pcc-percents-wrapper">
+          <span>time</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <footer>
+    <button id="start">開始</button>
+    <button id="stop">停止</button>
+    <button id="reset">リセット</button>
+    <%= audio_tag('Onoma-Inspiration11-3(High).mp3', id: 'sound')%>
+  </footer>
+</body>
+</html>
