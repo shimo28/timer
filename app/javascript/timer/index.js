@@ -5,7 +5,7 @@ window.addEventListener('load', function(){
   const stop = document.querySelector("#stop");
   const reset = document.querySelector("#reset");
   const count = 1000;
-  const time = 1500;
+  const time = 6;
   let set_id;
   let timer = time;
   let counter = 0;
